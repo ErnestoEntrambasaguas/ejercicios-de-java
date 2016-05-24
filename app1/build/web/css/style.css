@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300|Open+Sans|Oswald:300);
+
+body,html{
+    margin:0px;
+    padding:0px;
+    font-family:'Open Sans',sans-serif;
+    font-size: 13px;
+    color:#616161;
+    background-color:#f7f7f7;
+}
+h1{
+    font-family:'Ubuntu',sans-serif;
+}
+.centered{
+    max-width: 1180px;
+    width:100%;
+    margin:0px auto;
+    background-color:#ffffff;
+    box-sizing: border-box;
+    padding:60px 30px;
+    min-height: 100vh;
+    border-left:solid 1px #dddddd;
+    border-right:solid 1px #dddddd;
+}
+nav{
+    max-width: 1180px;
+    width:100%;
+    margin:0px auto;
+    background-color: #72b2ca;
+    padding: 20px 0px;
+}
+nav ul{
+    padding:0px;
+    margin:0px;
+}
+nav ul li{
+    position:relative;
+    display: inline-block;
+    color:#ffffff;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+nav ul li::after{
+    content:'';
+    position:absolute;
+    width: 1px;
+    background-color:#ffffff;
+    height: 100%;
+    right:0px;
+    top:0px;
+    
+}
+nav ul li a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.edition-result{
+    background-color:#f7f7f7;
+    border:solid 1px #616161;
+    border-radius:5px;
+    padding:10px 20px;
+}
+table.table-edition{
+    width:100%;
+    max-width:100%;
+    border-collapse: collapse;
+
+}
+table.table-edition th{
+    font-family:'Oswald',sans-serif;
+    font-size: 16px;
+    background-color:#f7f7f7;
+}
+table.table-edition input,table.table-edition textarea,table.table-edition select{
+    width:100%;
+    border-radius:5px;
+    box-shadow:none;
+    border:solid 1px #91a182;
+    box-sizing: border-box;
+    padding:5px 10px;
+    background-color:#f7f7f7;
+    font-family:'Open Sans',sans-serif;
+    font-size: 13px;
+}
+table.table-edition select{
+    width:auto;
+}
+table,td,tr,th{
+    border: solid 1px #616161;
+    text-align: right;
+}
+td,th{
+    padding: 5px 10px;
+}
+.table-edition input[type="submit"],.table-edition input[type="button"]{
+    cursor: pointer;
+    background-color:#72b2ca;
+    color:#fff;
+}
+.table-edition .row_editable input,.table-edition .row_editable textarea,.table-edition .row_editable select{
+    display:none;
+}
+.table-edition .row_editable input[type="submit"],.table-edition .row_editable input[type="button"]{
+    display:block;
+   
+}
+table.table-edition .row_editable input[type="submit"].save-edit-btn{
+    margin-top:5px;
+    display:none;
+}
+table.table-edition input[type="submit"].remove-btn{
+    background-color:#c65e65;
+}
+table.table-edition .row_editable input[type="submit"].remove-btn{
+    display:block !important;
+}
